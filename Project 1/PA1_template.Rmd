@@ -1,0 +1,19 @@
+---
+title: "PA1_template"
+author: "Juan Gonzalez Doval"
+date: "30/10/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r download_data}
+  link <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
+  download.file(link, "activity_monitoring_data.zip")
+  unzip("activity_monitoring_data.zip")
+```
+
